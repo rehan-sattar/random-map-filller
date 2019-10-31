@@ -3,11 +3,13 @@ import { Company } from './Company';
 import { CustomMap } from './CustomMap';
 
 const user = new User();
-console.log('TCL: user', user);
-
 const company = new Company();
-console.log('TCL: company', company);
-
 const map = new CustomMap('map');
-map.addUserMarker(user);
-console.log(map);
+
+/**
+ * @description make instances of the User and Company, each company and user will be having
+ * the methods which you can use to point a location on map.
+ */
+
+map.addMarker(user);
+map.addMarker(company);
